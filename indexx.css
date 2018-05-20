@@ -1,0 +1,122 @@
+:root{
+    font-size: 16px;
+    font-family: serif;
+}
+
+body {
+    margin: 0;
+    padding:0;
+}
+
+.container,.container-data {
+    display: flex;
+  flex-direction: column;
+}
+
+body,html{
+    height: 100%;  
+}
+
+.row {background-color: lightgreen;}
+#myself {background-color: lightgreen;}
+#areasofinterest {background-color: orange;}
+#Technologies {background-color: lightblue;}
+#experience {background-color: yellow;}
+#projects {background-color: grey;}
+#contact {background-color: white;}
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.row .my-image {
+    border: 1px solid #35eea4;
+    border-radius: 5px;
+    box-shadow: 0px 3px 20px 2px #2c2c2c;
+    width: 25vw;
+}
+
+.tab_content {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+    width:100%;
+    text-align: center; 
+    justify-content: center;	
+  }
+  .tab_content p{
+    font-size: 1.5rem;
+  }   
+
+.tab_content h1{
+    font-size: 2rem;
+}
+.icon-group {
+  margin-top: 2vh;
+   text-align: center; 
+    
+}
+  .icon-group .icon {
+    margin-right: 10px;
+    width: 25px; 
+}
+@media only screen and (max-width: 725px) {
+    .row {
+        flex-direction: column;
+    }
+    .row .image {
+        order: -1;
+    }
+    .row .my-image {
+        width: 60vw;
+    }
+}
+@media screen and (min-width: 768px) {
+  .imgcontainer,.container{
+    width:100%;
+  }
+  .tab_content p{
+    font-size: 1rem;
+  }   
+  .tab_content h1{
+    font-size: 1.5rem;
+  }
+    .row .my-image {
+        width: 30vw;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .imgcontainer,.container{
+    width:100%;
+  }
+  .tab_content p{
+    font-size: .9rem;
+  }   
+  .tab_content h1{
+    font-size: 1.4rem;
+  }
+    }
+    .row .my-image {
+        width: 30vw;
+    }
+}
+
+@media screen and (min-width: 220px) and (max-width: 479px) {
+  .imgcontainer,.container{
+    width:100%;
+  }
+  .tab_content p{
+    font-size: .9rem;
+  }   
+  .tab_content h1{
+    font-size: 1.4rem;
+  }
+    }
+    .row .my-image {
+        width: 35vw;
+    }
+}
